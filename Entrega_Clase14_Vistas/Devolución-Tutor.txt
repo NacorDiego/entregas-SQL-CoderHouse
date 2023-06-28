@@ -1,0 +1,17 @@
+Buenas tardes Diego muy buen trabajo. 
+
+
+
+El script corre sin errores, y la información de las vistas son consultas que se podrian utilizar en un caso real, aunque no se note por que hay pocos datos.  También utilizas varias clausulas y funciones de MySQL como los JOIN, GROUP BY , funciones de Fecha, ORDER BY.
+
+
+
+Solo por decirte algo para el proyecto final podrias agregar más vistas o modificar alguna creando algun ranking con el LIMIT por ejemplo los 3 empleados con mas ventas o menos ventas o o los 5 productos con menos cantidad_disponible, etc. O usar alguna función para cadenas (texto).
+
+
+
+Felicidades! el desafío pasa a estar aprobado.
+
+
+
+Saludos

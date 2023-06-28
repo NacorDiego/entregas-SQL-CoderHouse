@@ -1,0 +1,35 @@
+Buenas noches Diego, excelente trabajo.
+
+
+
+Corre todo el código de una vez sin errores. Tambien está bien que esten separados los inserts para cada registro por si da error sabes cuál es el que lo provocó. 
+
+
+
+Solo te sugiero para la entrega final; para que tengas distintas formas de cargar los ids autoincrementales, a los inserts de algunas tablas podes no cargales el id en los inserts a esa tabla o cargarlos a todos con null, para que el AUTO_INCREMENT lo haga. Por ejemplo:
+
+
+
+    Original
+
+INSERT INTO PRODUCTO_PROVEEDOR (ID_PRODUCTO_PROVEEDOR,ID_PRODUCTO,ID_PROVEEDOR,PRECIO_COMPRA) VALUES (1,5,1,9.99);
+
+
+
+    Sin el campo ID_PRODUCTO_PROVEEDOR
+
+INSERT INTO PRODUCTO_PROVEEDOR (ID_PRODUCTO,ID_PROVEEDOR,PRECIO_COMPRA) VALUES (5,1,9.99);
+
+
+
+    Cargando el campo ID_PRODUCTO_PROVEEDOR con null igual queda en 1 por ser el primero que se carga en la tabla y es autoincremental.
+
+INSERT INTO PRODUCTO_PROVEEDOR (ID_PRODUCTO_PROVEEDOR,ID_PRODUCTO,ID_PROVEEDOR,PRECIO_COMPRA) VALUES (NULL,5,1,9.99);
+
+
+
+El desafío pasa a estar aprobado.
+
+
+
+Saludos. 

@@ -1,0 +1,19 @@
+Buenas tardes Diego , muy buen trabajo, están muy bien descriptas las tablas.
+
+
+
+
+
+Te pediría si podes revisar para el próximo desafío, el campo hora de la tabla venta tiene que ser de tipo Hour si tiene el formato 00:00:00 y de tipo int  si es solo la hora sin minutos y segundos. Y también agregar la precisión en los campos numeric o decimal (d,s) donde d es el número de digitos y s es la cantidad de posiciones a la derecha de la coma.
+
+
+
+
+
+Felicitaciones el trabajo está aprobado 
+
+
+
+
+
+Saludos 

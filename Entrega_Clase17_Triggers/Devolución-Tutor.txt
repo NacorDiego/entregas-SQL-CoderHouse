@@ -1,0 +1,19 @@
+Buenas tardes Diego. Muy buen trabajo.
+
+
+
+Los triggers se crean correctamente, y funcionan bien.  Veo que utilizas las clausulas NEW y OLD, lo que está perfecto.
+
+
+
+Por decirte algo podrias agregar algun trigger para update donde utilices el  NEW y el OLD  en el mismo insert.
+
+Tambien te sugiero agregar un ejemplo de alguna consulta que dispare el trigger y luego un select a la tabla log , todo esto despues de la creación de cada trigger.
+
+
+
+Igualmente todo está muy bien.
+
+
+
+Saludos.

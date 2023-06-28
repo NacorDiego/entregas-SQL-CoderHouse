@@ -1,0 +1,82 @@
+----------------------------------------------------------------
+CÓDIGO ADJUNTADO POR TUTOR -------------------------------------
+----------------------------------------------------------------
+
+-- CREACIÓN DE PROCEDIMIENTOS
+USE negocio_pesca;
+
+-- Creo un procedimiento que ordene los campos de la tabla ingresada como parametro
+DROP PROCEDURE IF EXISTS sp_ordenarTabla;
+DELIMITER $$
+CREATE PROCEDURE sp_ordenarTabla (IN tabla VARCHAR(100), IN campo_ordenamiento VARCHAR(100), IN tipo_orden VARCHAR(15))
+BEGIN
+    DECLARE ordenamiento VARCHAR(10);
+
+    -- Establecer el tipo de ordenamiento
+    IF tipo_orden = 'ascendente' THEN
+        SET ordenamiento = 'ASC';
+    ELSEIF tipo_orden = 'descendente' THEN
+        SET ordenamiento = 'DESC';
+    ELSE
+        -- Tipo de ordenamiento inválido, se asigna ascendente por defecto
+        -- SET ordenamiento = 'ASC';
+		SET ordenamiento = 'Inválido';
+        SELECT "Error: Debe ingresar ascendente o descendente" AS Output_message;
+   END IF;
+
+    -- Consulta para ordenar la tabla
+    IF ordenamiento <> 'Inválido' THEN
+		SET @sql = CONCAT('SELECT * FROM ', tabla, ' ORDER BY ', campo_ordenamiento, ' ', ordenamiento);
+		PREPARE stmt FROM @sql;
+		EXECUTE stmt;
+		DEALLOCATE PREPARE stmt;
+    END IF;
+    -- Realizo una consulta dinámica con la query generada anteriormente
+END$$
+DELIMITER ;
+
+CALL sp_ordenarTabla ('categorias','nombre','DESCENDENTE');
+
+----------------------------------------------------------------
+DEVOLUCIÓN TUTOR -----------------------------------------------
+----------------------------------------------------------------
+
+Buenas tardes Diego, ¿Cómo estás?
+
+
+
+Muy buen trabajo,el código corre sin errores, los SPs funcionan de manera correcta.
+
+Veo que para un sp usaste consultas preparadas, y usaste el insert dentro del otro sp, lo que está muy bien .
+
+
+
+Te pediría para el proyecto final si podrías agrandar el tamaño del segundo parámetro del SP sp_ordenarTabla
+
+porque si ingresa la palabra DESCENDENTE no entra en un VARCHAR(10) ya que tiene 11 caracteres. Y agregar un ejemplo de cómo 
+
+llamar a cada SP. Por ejemplo :
+
+
+
+CALL sp_ordenarTabla ('categorias','nombre','DESCENDENTE');
+
+CALL sp_insertar_empleado('2023-06-01','23:55:55',2);
+
+
+
+También si queres podes cambiar el nombre del segundo SP para que se especifique que se está cargando una nueva venta
+
+y y cada registro de venta tiene el codigo del empleado que la hizo, pero la accion que se guarda es la venta en si.
+
+
+
+Tambien te sugiero practicar con parámetros de salida.
+
+
+
+Todo está muy bien. Te dejo un código del primer sp que puede mostrar un error. El desafío pasa a estar aprobado.
+
+
+
+Saludos.

@@ -1,0 +1,19 @@
+Buenas tardes Diego. Excelente trabajo. 
+
+
+
+No le veo errores conceptuales, está muy bien hecho el diagrama.
+
+En el Diagrama Entidad Relación si se permiten las relaciones muchos a muchos, pero al tener ya tablas intermedias entre las entidades que tienen ese tipo de cardinalidad, no te queda mucho por hacer para el siguiente desafío además de codificar a SQL lo que ya está hecho en el diagrama (que para mi punto de vista es más dificil).
+
+
+
+Solo te pediria que revises la FK precio_costo de producto ya que no viene de ninguna otra entidad, creo que estaría bien eliminarla.
+
+
+
+¡Felicitaciones!. Apruebo el desafío.
+
+
+
+Saludos

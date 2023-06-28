@@ -1,0 +1,33 @@
+¡Recibido! ¡El trabajo está aprobado!¡Recibido! ¡El trabajo está aprobado!Buenas tardes Diego ¿Cómo estás? Muy buen trabajo.
+
+
+
+El código corre sin errores y las funciones funcionan correctamente y son útiles tambien. Además usaste bien el CASE WHEN en la segunda función.
+
+
+
+Te sugiero que para el proyecto final también agregues después de cada función un ejemplo de cómo llamarlas. Por ejemplo: 
+
+SELECT calcular_precio_con_IVA(2,1);
+
+SELECT  aplicar_recargo_metodo_pago(2,100);
+
+
+
+También te pediría agrandar la precisión del primer parámetro  p_IVA decimal(3,2) de la funcion calcular_precio_con_IVA, ya que da error si se quiere ingresar valores mayores a 9,99 
+
+Es en esta línea:
+
+CREATE FUNCTION calcular_precio_con_IVA (p_IVA decimal(3,2), p_id_prod int)
+
+
+
+Los valores que van dentro de paréntesis despues del tipo 'decimal' son:
+
+El primero indica la cantidad de dígitos totales que va a tener el número
+El segundo indica la cantidad de dígitos a la derecha de la coma que va a tener el número decimal.
+Entonces si son tres posiciones y dos son decimales, el número  en la parte entera más grande es el 9.
+
+
+
+Igualmente todo está muy bien, 

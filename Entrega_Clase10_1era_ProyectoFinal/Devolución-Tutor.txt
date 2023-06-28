@@ -1,0 +1,41 @@
+---------------------------------------------------------------
+CONSULTA MIA AL TUTOR -----------------------------------------
+---------------------------------------------------------------
+
+Buenas noches José, te realizo la entrega, solo me quedó una duda:
+En la tabla Productos yo tenía una llave foránea vinculada a la tabla productoProveedor que era precio_costo. Pero en la tabla productoProveedor tengo una llave foránea vinculada a la tabla Productos que era id_producto. 
+Esto me provocó un error cuando quise crear las tablas y tuve que hacer que "precio_costo" deje de ser una llave foránea. Hay alguna forma de arreglar eso?
+
+Gracias, saludos!
+
+---------------------------------------------------------------
+DEVOLUCIÓN DEL TUTOR -----------------------------------------
+---------------------------------------------------------------
+
+Buenas tardes Diego. Excelente trabajo.
+
+
+
+Está muy bien hecha la descripción del modelo de negocio y del uso de la base de datos.
+
+El diagrama entidad relación esta creado correctamente.
+
+El código corre sin errores de una sola vez. Y la descripción de las tablas también esta muy bien.
+
+ 
+
+Por lo que preguntás; veo suficientes las claves foráneas que utilizas en este momento, normalmente se usa una llave primaria de otra tabla para referenciar el campo que se usa como clave foránea, porque ese campo no se repite y un precio se puede repetir entre productos, podes agregar otro precio, pero no te aconsejo que lo use como una clave o índice.
+
+
+
+Solo te pediría que le agregues nombres a las llaves foráneas con la palabra Constraint y el nombre de la llave antes de las palabras Foreing Key.
+
+
+
+
+
+El desafío pasa a estar aprobado. Seguí con esa dedicación venis muy bién.
+
+
+
+Saludos.
