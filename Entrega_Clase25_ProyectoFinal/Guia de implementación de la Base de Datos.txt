@@ -1,0 +1,16 @@
+Orden de ejecución de los archivos .sql:
+
+Escenciales:
+
+01: creacion_tablas.sql
+02: insercion_datos.sql
+03: creacion_vistas.sql
+04: creacion_funciones.sql
+05: creacion_procedimientos.sql
+06: creacion_triggers.sql
+
+Opcionales:
+
+07: creacion_usuarios.sql
+08: sentencias_TCL.sql
+09: backup.sql
